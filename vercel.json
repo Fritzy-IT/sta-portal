@@ -1,14 +1,10 @@
 {
   "functions": {
-    "index.php": {
-      "runtime": "vercel-php@0.7.5"
-    },
-    "download_handler.php": {
-      "runtime": "vercel-php@0.7.5"
-    }
+    "index.php": { "runtime": "vercel-php@0.6.0" },
+    "download_handler.php": { "runtime": "vercel-php@0.6.0" }
   },
   "routes": [
-    { "src": "/", "dest": "index.php" },
-    { "src": "/download/(.*)", "dest": "download_handler.php?file=$1" }
+    { "src": "/download/(.*)", "dest": "/download_handler.php?file=$1" },
+    { "src": "/(.*)", "dest": "/index.php" }
   ]
 }

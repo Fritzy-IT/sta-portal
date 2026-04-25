@@ -1,6 +1,9 @@
 {
   "functions": {
-    "*.php": {
+    "index.php": {
+      "runtime": "vercel-php@0.7.5"
+    },
+    "download_handler.php": {
       "runtime": "vercel-php@0.7.5"
     }
   },
